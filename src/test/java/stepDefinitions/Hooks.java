@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class Hooks {
 
-    @Before("@ListTests or @Label")
+    @Before("@ListTests or @Label or @CardTests or @ChecklistTests")
     public void beforeListTests() throws IOException {
 
         StepDefinition stepDef = new StepDefinition();
@@ -33,9 +33,11 @@ public class Hooks {
             // Since we clear the map in beforeListTests, there should be only one or we know the name
             stepDef.delete_the_board("Board_For_Tests_Test");
             StepDefinition.listMap.clear();
+            StepDefinition.cardMap.clear();
+            StepDefinition.checklistMap.clear();
+            StepDefinition.checkItemMap.clear();
         }
 
     }
 
 }
-
