@@ -28,6 +28,12 @@ public class StepDefinition extends Utils {
     String selectedListId;
     public static HashMap<String, String> labelMap = new HashMap<>();
     String selectedLabelId;
+    public static HashMap<String, String> cardMap = new HashMap<>();
+    String selectedCardId;
+    public static HashMap<String, String> checklistMap = new HashMap<>();
+    String selectedChecklistId;
+    public static HashMap<String, String> checkItemMap = new HashMap<>();
+    String selectedCheckItemId;
 
     @Given("Create Board payload with {string}")
     public void create_board_payload_with(String boardName) throws IOException {
@@ -90,6 +96,18 @@ public class StepDefinition extends Utils {
             String name = getJsonPath(response, "name");
             labelMap.put(name, id);
             System.out.println("Current Label Map: " + labelMap);
+        } else if (variableName.equalsIgnoreCase("cardId")) {
+            String name = getJsonPath(response, "name");
+            cardMap.put(name, id);
+            System.out.println("Current Card Map: " + cardMap);
+        } else if (variableName.equalsIgnoreCase("checklistId")) {
+            String name = getJsonPath(response, "name");
+            checklistMap.put(name, id);
+            System.out.println("Current Checklist Map: " + checklistMap);
+        } else if (variableName.equalsIgnoreCase("checkItemId")) {
+            String name = getJsonPath(response, "name");
+            checkItemMap.put(name, id);
+            System.out.println("Current CheckItem Map: " + checkItemMap);
         }
 
     }
@@ -305,5 +323,166 @@ public class StepDefinition extends Utils {
         reqSpec = given()
                 .spec(requestSpecification())
                 .pathParam("id", selectedLabelId);
+    }
+
+    // ==================== CARD STEP DEFINITIONS ====================
+
+    @Given("Create Card payload with {string} and list {string}")
+    public void create_card_payload_with_and_list(String cardName, String listName) throws IOException {
+        if (listMap.isEmpty()) {
+            throw new IllegalStateException("No lists available. Please create a list first.");
+        }
+        selectedListId = listMap.get(listName);
+        if (selectedListId == null) {
+            throw new IllegalStateException("List with name " + listName + " not found.");
+        }
+
+        reqSpec = given()
+                .spec(requestSpecification())
+                .queryParam("name", cardName)
+                .queryParam("idList", selectedListId);
+    }
+
+    @Given("Ensure cards are available")
+    public void ensure_cards_are_available() throws IOException {
+        if (cardMap.isEmpty()) {
+            ensure_lists_are_available();
+
+            if (listMap.isEmpty()) {
+                throw new IllegalStateException("No lists available to create a card.");
+            }
+            String listName = listMap.keySet().iterator().next();
+            create_card_payload_with_and_list("E2E_Test_Card_1", listName);
+            user_calls_with_http_request("CreateCardAPI", "Post");
+            String id = getJsonPath(response, "id");
+            String name = getJsonPath(response, "name");
+            cardMap.put(name, id);
+        }
+        System.out.println("Available Card Map: " + cardMap);
+    }
+
+    @Given("I target the card {string}")
+    public void i_target_the_card(String cardName) throws IOException {
+        selectedCardId = cardMap.get(cardName);
+        if (selectedCardId == null) {
+            throw new IllegalStateException("Card with name " + cardName + " not found.");
+        }
+        reqSpec = given()
+                .spec(requestSpecification())
+                .pathParam("id", selectedCardId);
+    }
+
+    @Given("Update the card {string} with name {string} and description {string}")
+    public void update_the_card_with_name_and_description(String cardName, String newName, String description) throws IOException {
+        selectedCardId = cardMap.get(cardName);
+        if (selectedCardId == null) {
+            throw new IllegalStateException("Card with name " + cardName + " not found.");
+        }
+        reqSpec = given()
+                .spec(requestSpecification())
+                .pathParam("id", selectedCardId)
+                .queryParam("name", newName)
+                .queryParam("desc", description);
+    }
+
+    @Given("delete the card {string}")
+    public void delete_the_card(String cardName) throws IOException {
+        selectedCardId = cardMap.get(cardName);
+        if (selectedCardId == null) {
+            throw new IllegalStateException("Card with name " + cardName + " not found.");
+        }
+        reqSpec = given()
+                .spec(requestSpecification())
+                .pathParam("id", selectedCardId);
+    }
+
+    // ==================== CHECKLIST STEP DEFINITIONS ====================
+
+    @Given("Create Checklist payload with {string} on card {string}")
+    public void create_checklist_payload_with_on_card(String checklistName, String cardName) throws IOException {
+        if (cardMap.isEmpty()) {
+            throw new IllegalStateException("No cards available. Please create a card first.");
+        }
+        selectedCardId = cardMap.get(cardName);
+        if (selectedCardId == null) {
+            throw new IllegalStateException("Card with name " + cardName + " not found.");
+        }
+
+        reqSpec = given()
+                .spec(requestSpecification())
+                .queryParam("name", checklistName)
+                .queryParam("idCard", selectedCardId);
+    }
+
+    @Given("Ensure checklists are available")
+    public void ensure_checklists_are_available() throws IOException {
+        if (checklistMap.isEmpty()) {
+            ensure_cards_are_available();
+
+            if (cardMap.isEmpty()) {
+                throw new IllegalStateException("No cards available to create a checklist.");
+            }
+            String cardName = cardMap.keySet().iterator().next();
+            create_checklist_payload_with_on_card("E2E_Test_Checklist_1", cardName);
+            user_calls_with_http_request("CreateChecklistAPI", "Post");
+            String id = getJsonPath(response, "id");
+            String name = getJsonPath(response, "name");
+            checklistMap.put(name, id);
+        }
+        System.out.println("Available Checklist Map: " + checklistMap);
+    }
+
+    @Given("I target the checklist {string}")
+    public void i_target_the_checklist(String checklistName) throws IOException {
+        selectedChecklistId = checklistMap.get(checklistName);
+        if (selectedChecklistId == null) {
+            throw new IllegalStateException("Checklist with name " + checklistName + " not found.");
+        }
+        reqSpec = given()
+                .spec(requestSpecification())
+                .pathParam("id", selectedChecklistId);
+    }
+
+    @Given("Update the checklist {string} with name {string}")
+    public void update_the_checklist_with_name(String checklistName, String newName) throws IOException {
+        selectedChecklistId = checklistMap.get(checklistName);
+        if (selectedChecklistId == null) {
+            throw new IllegalStateException("Checklist with name " + checklistName + " not found.");
+        }
+        reqSpec = given()
+                .spec(requestSpecification())
+                .pathParam("id", selectedChecklistId)
+                .queryParam("name", newName);
+
+        checklistMap.put(newName, selectedChecklistId);
+        checklistMap.remove(checklistName);
+
+    }
+
+    @Given("delete the checklist {string}")
+    public void delete_the_checklist(String checklistName) throws IOException {
+        selectedChecklistId = checklistMap.get(checklistName);
+        if (selectedChecklistId == null) {
+            throw new IllegalStateException("Checklist with name " + checklistName + " not found.");
+        }
+        reqSpec = given()
+                .spec(requestSpecification())
+                .pathParam("id", selectedChecklistId);
+    }
+
+    @Given("Create CheckItem payload with {string} on checklist {string}")
+    public void create_checkitem_payload_with_on_checklist(String checkItemName, String checklistName) throws IOException {
+        if (checklistMap.isEmpty()) {
+            throw new IllegalStateException("No checklists available. Please create a checklist first.");
+        }
+        selectedChecklistId = checklistMap.get(checklistName);
+        if (selectedChecklistId == null) {
+            throw new IllegalStateException("Checklist with name " + checklistName + " not found.");
+        }
+
+        reqSpec = given()
+                .spec(requestSpecification())
+                .pathParam("id", selectedChecklistId)
+                .queryParam("name", checkItemName);
     }
 }
