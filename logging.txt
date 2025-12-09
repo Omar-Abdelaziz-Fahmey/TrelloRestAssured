@@ -1,0 +1,2522 @@
+Request method:	POST
+Request URI:	https://api.trello.com/1/boards?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6&name=E2E_Test_Board_5
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+				name=E2E_Test_Board_5
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 1683
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:31 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 99
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 299
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 374
+X-Server-Time: 1764053971553
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: 2cca2e8ca8bc4086a2a8c54c0d3484b9
+Atl-Request-Id: 2cca2e8c-a8bc-4086-a2a8-c54c0d3484b9
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 0a57f6293a4a66d5d1394d56ff6c01b4.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: e0gDoWij8iQ-EiS-IoWF4rPAlSKzerDNTtH9zbgDr7hibhNyrBQUgg==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=464,atl-edge;dur=411,atl-edge-internal;dur=8,atl-edge-upstream;dur=404,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="e0gDoWij8iQ-EiS-IoWF4rPAlSKzerDNTtH9zbgDr7hibhNyrBQUgg==",cdn-downstream-fbl;dur=467
+
+{
+    "id": "692553d365f6be98d0195dad",
+    "name": "E2E_Test_Board_5",
+    "desc": "",
+    "descData": null,
+    "closed": false,
+    "idOrganization": "60c1544adf79317f3e39ccd2",
+    "idEnterprise": null,
+    "pinned": false,
+    "url": "https://trello.com/b/91tr48Vb/e2etestboard5",
+    "shortUrl": "https://trello.com/b/91tr48Vb",
+    "prefs": {
+        "permissionLevel": "private",
+        "hideVotes": false,
+        "voting": "disabled",
+        "comments": "members",
+        "invitations": "members",
+        "selfJoin": true,
+        "cardCovers": true,
+        "showCompleteStatus": true,
+        "cardCounts": false,
+        "isTemplate": false,
+        "cardAging": "regular",
+        "calendarFeedEnabled": false,
+        "hiddenPluginBoardButtons": [
+            
+        ],
+        "switcherViews": [
+            {
+                "viewType": "Board",
+                "enabled": true
+            },
+            {
+                "viewType": "Table",
+                "enabled": true
+            },
+            {
+                "viewType": "Calendar",
+                "enabled": false
+            },
+            {
+                "viewType": "Dashboard",
+                "enabled": false
+            },
+            {
+                "viewType": "Timeline",
+                "enabled": false
+            },
+            {
+                "viewType": "Map",
+                "enabled": false
+            }
+        ],
+        "autoArchive": null,
+        "background": "blue",
+        "backgroundColor": "#0079BF",
+        "backgroundDarkColor": null,
+        "backgroundImage": null,
+        "backgroundDarkImage": null,
+        "backgroundImageScaled": null,
+        "backgroundTile": false,
+        "backgroundBrightness": "dark",
+        "sharedSourceUrl": null,
+        "backgroundBottomColor": "#0079BF",
+        "backgroundTopColor": "#0079BF",
+        "canBePublic": true,
+        "canBeEnterprise": true,
+        "canBeOrg": true,
+        "canBePrivate": true,
+        "canInvite": true
+    },
+    "labelNames": {
+        "green": "",
+        "yellow": "",
+        "orange": "",
+        "red": "",
+        "purple": "",
+        "blue": "",
+        "sky": "",
+        "lime": "",
+        "pink": "",
+        "black": "",
+        "green_dark": "",
+        "yellow_dark": "",
+        "orange_dark": "",
+        "red_dark": "",
+        "purple_dark": "",
+        "blue_dark": "",
+        "sky_dark": "",
+        "lime_dark": "",
+        "pink_dark": "",
+        "black_dark": "",
+        "green_light": "",
+        "yellow_light": "",
+        "orange_light": "",
+        "red_light": "",
+        "purple_light": "",
+        "blue_light": "",
+        "sky_light": "",
+        "lime_light": "",
+        "pink_light": "",
+        "black_light": ""
+    },
+    "limits": {
+        
+    }
+}
+Request method:	GET
+Request URI:	https://api.trello.com/1/members/me/boards?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 3719
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:33 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Set-Cookie: dsc=fda3bade7e947e6cb741516bc3c792a79fcbb1e4c2ecdb81f8c13a86c1dc1ea9; Path=/; Expires=Tue, 09 Dec 2025 06:59:33 GMT; Secure; SameSite=None
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 98
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 298
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 373
+X-Server-Time: 1764053973490
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: 8ee4a091b61149d8a6e721ca91db3c23
+Atl-Request-Id: 8ee4a091-b611-49d8-a6e7-21ca91db3c23
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 cdc4d59d4358cd1543a53631005f3208.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: pL2CpfMCzoEdKLjfayWeiK8pKhD04WlN0UcYyorKzXDhrZadLhLbWA==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=264,atl-edge;dur=211,atl-edge-internal;dur=8,atl-edge-upstream;dur=205,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="pL2CpfMCzoEdKLjfayWeiK8pKhD04WlN0UcYyorKzXDhrZadLhLbWA==",cdn-downstream-fbl;dur=269
+
+[
+    {
+        "id": "692553d365f6be98d0195dad",
+        "nodeId": "ari:cloud:trello::board/workspace/60c1544adf79317f3e39ccd2/692553d365f6be98d0195dad",
+        "name": "E2E_Test_Board_5",
+        "desc": "",
+        "descData": null,
+        "closed": false,
+        "dateClosed": null,
+        "idOrganization": "60c1544adf79317f3e39ccd2",
+        "idEnterprise": null,
+        "limits": {
+            "attachments": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 36000,
+                    "warnAt": 28800
+                },
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 1000,
+                    "warnAt": 800
+                }
+            },
+            "boards": {
+                "totalMembersPerBoard": {
+                    "status": "ok",
+                    "disableAt": 1600,
+                    "warnAt": 1280
+                },
+                "totalAccessRequestsPerBoard": {
+                    "status": "ok",
+                    "disableAt": 4000,
+                    "warnAt": 3200
+                }
+            },
+            "cards": {
+                "openPerBoard": {
+                    "status": "ok",
+                    "disableAt": 5000,
+                    "warnAt": 4000
+                },
+                "openPerList": {
+                    "status": "ok",
+                    "disableAt": 5000,
+                    "warnAt": 4000
+                },
+                "totalPerBoard": {
+                    "status": "ok",
+                    "disableAt": 2000000,
+                    "warnAt": 1600000
+                },
+                "totalPerList": {
+                    "status": "ok",
+                    "disableAt": 1000000,
+                    "warnAt": 800000
+                }
+            },
+            "checklists": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 1800000,
+                    "warnAt": 1440000
+                },
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 500,
+                    "warnAt": 400
+                }
+            },
+            "checkItems": {
+                "perChecklist": {
+                    "status": "ok",
+                    "disableAt": 200,
+                    "warnAt": 160
+                }
+            },
+            "customFields": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 50,
+                    "warnAt": 40
+                }
+            },
+            "customFieldOptions": {
+                "perField": {
+                    "status": "ok",
+                    "disableAt": 50,
+                    "warnAt": 40
+                }
+            },
+            "labels": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 1000,
+                    "warnAt": 800
+                }
+            },
+            "lists": {
+                "openPerBoard": {
+                    "status": "ok",
+                    "disableAt": 500,
+                    "warnAt": 400
+                },
+                "totalPerBoard": {
+                    "status": "ok",
+                    "disableAt": 3000,
+                    "warnAt": 2400
+                }
+            },
+            "stickers": {
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 70,
+                    "warnAt": 56
+                }
+            },
+            "reactions": {
+                "perAction": {
+                    "status": "ok",
+                    "disableAt": 900,
+                    "warnAt": 720
+                },
+                "uniquePerAction": {
+                    "status": "ok",
+                    "disableAt": 17,
+                    "warnAt": 14
+                }
+            }
+        },
+        "pinned": false,
+        "starred": false,
+        "url": "https://trello.com/b/91tr48Vb/e2etestboard5",
+        "prefs": {
+            "permissionLevel": "private",
+            "hideVotes": false,
+            "voting": "disabled",
+            "comments": "members",
+            "invitations": "members",
+            "selfJoin": true,
+            "cardCovers": true,
+            "showCompleteStatus": true,
+            "cardCounts": false,
+            "isTemplate": false,
+            "cardAging": "regular",
+            "calendarFeedEnabled": false,
+            "hiddenPluginBoardButtons": [
+                
+            ],
+            "switcherViews": [
+                {
+                    "viewType": "Board",
+                    "enabled": true
+                },
+                {
+                    "viewType": "Table",
+                    "enabled": true
+                },
+                {
+                    "viewType": "Calendar",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Dashboard",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Timeline",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Map",
+                    "enabled": false
+                }
+            ],
+            "autoArchive": null,
+            "background": "blue",
+            "backgroundColor": "#0079BF",
+            "backgroundDarkColor": null,
+            "backgroundImage": null,
+            "backgroundDarkImage": null,
+            "backgroundImageScaled": null,
+            "backgroundTile": false,
+            "backgroundBrightness": "dark",
+            "sharedSourceUrl": null,
+            "backgroundBottomColor": "#0079BF",
+            "backgroundTopColor": "#0079BF",
+            "canBePublic": true,
+            "canBeEnterprise": true,
+            "canBeOrg": true,
+            "canBePrivate": true,
+            "canInvite": true
+        },
+        "shortLink": "91tr48Vb",
+        "subscribed": false,
+        "labelNames": {
+            "green": "",
+            "yellow": "",
+            "orange": "",
+            "red": "",
+            "purple": "",
+            "blue": "",
+            "sky": "",
+            "lime": "",
+            "pink": "",
+            "black": "",
+            "green_dark": "",
+            "yellow_dark": "",
+            "orange_dark": "",
+            "red_dark": "",
+            "purple_dark": "",
+            "blue_dark": "",
+            "sky_dark": "",
+            "lime_dark": "",
+            "pink_dark": "",
+            "black_dark": "",
+            "green_light": "",
+            "yellow_light": "",
+            "orange_light": "",
+            "red_light": "",
+            "purple_light": "",
+            "blue_light": "",
+            "sky_light": "",
+            "lime_light": "",
+            "pink_light": "",
+            "black_light": ""
+        },
+        "powerUps": [
+            
+        ],
+        "dateLastActivity": null,
+        "dateLastView": null,
+        "shortUrl": "https://trello.com/b/91tr48Vb",
+        "idTags": [
+            
+        ],
+        "datePluginDisable": null,
+        "creationMethod": "automatic",
+        "ixUpdate": "3",
+        "templateGallery": null,
+        "enterpriseOwned": false,
+        "idBoardSource": null,
+        "premiumFeatures": [
+            "additionalBoardBackgrounds",
+            "additionalStickers",
+            "customBoardBackgrounds",
+            "customEmoji",
+            "customStickers",
+            "plugins"
+        ],
+        "idMemberCreator": "56a0aaa2ccd7243116ce6be1",
+        "type": null,
+        "memberships": [
+            {
+                "id": "692553d365f6be98d0195dc7",
+                "idMember": "56a0aaa2ccd7243116ce6be1",
+                "memberType": "admin",
+                "unconfirmed": false,
+                "deactivated": false
+            }
+        ]
+    }
+]
+Request method:	PUT
+Request URI:	https://api.trello.com/1/boards/692553d365f6be98d0195dad?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6&name=Updated_Board_Name&prefs%2Fbackground=orange
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+				name=Updated_Board_Name
+				prefs/background=orange
+Form params:	<none>
+Path params:	id=692553d365f6be98d0195dad
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 1678
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:34 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 97
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 297
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 372
+X-Server-Time: 1764053974121
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: e7d398fbf99b40aa9df5f786649b5cbf
+Atl-Request-Id: e7d398fb-f99b-40aa-9df5-f786649b5cbf
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 b1c41abb57b74d6100911fc165bda596.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: E-coLM8ZoTkFcB8fzCtcH-Pcrfp5_JZIZEnTW1WQE179_9LKOD3QkQ==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=416,atl-edge;dur=364,atl-edge-internal;dur=8,atl-edge-upstream;dur=357,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="E-coLM8ZoTkFcB8fzCtcH-Pcrfp5_JZIZEnTW1WQE179_9LKOD3QkQ==",cdn-downstream-fbl;dur=419
+
+{
+    "id": "692553d365f6be98d0195dad",
+    "name": "Updated_Board_Name",
+    "desc": "",
+    "descData": null,
+    "closed": false,
+    "idOrganization": "60c1544adf79317f3e39ccd2",
+    "idEnterprise": null,
+    "pinned": false,
+    "url": "https://trello.com/b/91tr48Vb/updatedboardname",
+    "shortUrl": "https://trello.com/b/91tr48Vb",
+    "prefs": {
+        "permissionLevel": "private",
+        "hideVotes": false,
+        "voting": "disabled",
+        "comments": "members",
+        "invitations": "members",
+        "selfJoin": true,
+        "cardCovers": true,
+        "showCompleteStatus": true,
+        "cardCounts": false,
+        "isTemplate": false,
+        "cardAging": "regular",
+        "calendarFeedEnabled": false,
+        "hiddenPluginBoardButtons": [
+            
+        ],
+        "switcherViews": [
+            {
+                "viewType": "Board",
+                "enabled": true
+            },
+            {
+                "viewType": "Table",
+                "enabled": true
+            },
+            {
+                "viewType": "Calendar",
+                "enabled": false
+            },
+            {
+                "viewType": "Dashboard",
+                "enabled": false
+            },
+            {
+                "viewType": "Timeline",
+                "enabled": false
+            },
+            {
+                "viewType": "Map",
+                "enabled": false
+            }
+        ],
+        "autoArchive": null,
+        "background": "orange",
+        "backgroundColor": "#D29034",
+        "backgroundDarkColor": null,
+        "backgroundImage": null,
+        "backgroundDarkImage": null,
+        "backgroundImageScaled": null,
+        "backgroundTile": false,
+        "backgroundBrightness": "dark",
+        "sharedSourceUrl": null,
+        "backgroundBottomColor": "#D29034",
+        "backgroundTopColor": "#D29034",
+        "canBePublic": true,
+        "canBeEnterprise": true,
+        "canBeOrg": true,
+        "canBePrivate": true,
+        "canInvite": true
+    },
+    "labelNames": {
+        "green": "",
+        "yellow": "",
+        "orange": "",
+        "red": "",
+        "purple": "",
+        "blue": "",
+        "sky": "",
+        "lime": "",
+        "pink": "",
+        "black": "",
+        "green_dark": "",
+        "yellow_dark": "",
+        "orange_dark": "",
+        "red_dark": "",
+        "purple_dark": "",
+        "blue_dark": "",
+        "sky_dark": "",
+        "lime_dark": "",
+        "pink_dark": "",
+        "black_dark": "",
+        "green_light": "",
+        "yellow_light": "",
+        "orange_light": "",
+        "red_light": "",
+        "purple_light": "",
+        "blue_light": "",
+        "sky_light": "",
+        "lime_light": "",
+        "pink_light": "",
+        "black_light": ""
+    }
+}
+Request method:	GET
+Request URI:	https://api.trello.com/1/members/me/boards?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 3726
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:34 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Set-Cookie: dsc=feeef4e7a292a9dec7efbbec7ffe9fb50069d1bb619b9f9524737a14cfaf0f79; Path=/; Expires=Tue, 09 Dec 2025 06:59:34 GMT; Secure; SameSite=None
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 96
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 296
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 371
+X-Server-Time: 1764053974578
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: 072d456866e040b6a091ce016452777f
+Atl-Request-Id: 072d4568-66e0-40b6-a091-ce016452777f
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 58abc76b84af71759da7f4300a84e67a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: ruCRCYyfWqdbcz7iXk_EILpIB0tXCKK0RNxT_Q3dAUwJdjuB7t58Yg==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=237,atl-edge;dur=184,atl-edge-internal;dur=9,atl-edge-upstream;dur=176,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="ruCRCYyfWqdbcz7iXk_EILpIB0tXCKK0RNxT_Q3dAUwJdjuB7t58Yg==",cdn-downstream-fbl;dur=241
+
+[
+    {
+        "id": "692553d365f6be98d0195dad",
+        "nodeId": "ari:cloud:trello::board/workspace/60c1544adf79317f3e39ccd2/692553d365f6be98d0195dad",
+        "name": "Updated_Board_Name",
+        "desc": "",
+        "descData": null,
+        "closed": false,
+        "dateClosed": null,
+        "idOrganization": "60c1544adf79317f3e39ccd2",
+        "idEnterprise": null,
+        "limits": {
+            "attachments": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 36000,
+                    "warnAt": 28800
+                },
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 1000,
+                    "warnAt": 800
+                }
+            },
+            "boards": {
+                "totalMembersPerBoard": {
+                    "status": "ok",
+                    "disableAt": 1600,
+                    "warnAt": 1280
+                },
+                "totalAccessRequestsPerBoard": {
+                    "status": "ok",
+                    "disableAt": 4000,
+                    "warnAt": 3200
+                }
+            },
+            "cards": {
+                "openPerBoard": {
+                    "status": "ok",
+                    "disableAt": 5000,
+                    "warnAt": 4000
+                },
+                "openPerList": {
+                    "status": "ok",
+                    "disableAt": 5000,
+                    "warnAt": 4000
+                },
+                "totalPerBoard": {
+                    "status": "ok",
+                    "disableAt": 2000000,
+                    "warnAt": 1600000
+                },
+                "totalPerList": {
+                    "status": "ok",
+                    "disableAt": 1000000,
+                    "warnAt": 800000
+                }
+            },
+            "checklists": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 1800000,
+                    "warnAt": 1440000
+                },
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 500,
+                    "warnAt": 400
+                }
+            },
+            "checkItems": {
+                "perChecklist": {
+                    "status": "ok",
+                    "disableAt": 200,
+                    "warnAt": 160
+                }
+            },
+            "customFields": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 50,
+                    "warnAt": 40
+                }
+            },
+            "customFieldOptions": {
+                "perField": {
+                    "status": "ok",
+                    "disableAt": 50,
+                    "warnAt": 40
+                }
+            },
+            "labels": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 1000,
+                    "warnAt": 800
+                }
+            },
+            "lists": {
+                "openPerBoard": {
+                    "status": "ok",
+                    "disableAt": 500,
+                    "warnAt": 400
+                },
+                "totalPerBoard": {
+                    "status": "ok",
+                    "disableAt": 3000,
+                    "warnAt": 2400
+                }
+            },
+            "stickers": {
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 70,
+                    "warnAt": 56
+                }
+            },
+            "reactions": {
+                "perAction": {
+                    "status": "ok",
+                    "disableAt": 900,
+                    "warnAt": 720
+                },
+                "uniquePerAction": {
+                    "status": "ok",
+                    "disableAt": 17,
+                    "warnAt": 14
+                }
+            }
+        },
+        "pinned": false,
+        "starred": false,
+        "url": "https://trello.com/b/91tr48Vb/updatedboardname",
+        "prefs": {
+            "permissionLevel": "private",
+            "hideVotes": false,
+            "voting": "disabled",
+            "comments": "members",
+            "invitations": "members",
+            "selfJoin": true,
+            "cardCovers": true,
+            "showCompleteStatus": true,
+            "cardCounts": false,
+            "isTemplate": false,
+            "cardAging": "regular",
+            "calendarFeedEnabled": false,
+            "hiddenPluginBoardButtons": [
+                
+            ],
+            "switcherViews": [
+                {
+                    "viewType": "Board",
+                    "enabled": true
+                },
+                {
+                    "viewType": "Table",
+                    "enabled": true
+                },
+                {
+                    "viewType": "Calendar",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Dashboard",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Timeline",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Map",
+                    "enabled": false
+                }
+            ],
+            "autoArchive": null,
+            "background": "orange",
+            "backgroundColor": "#D29034",
+            "backgroundDarkColor": null,
+            "backgroundImage": null,
+            "backgroundDarkImage": null,
+            "backgroundImageScaled": null,
+            "backgroundTile": false,
+            "backgroundBrightness": "dark",
+            "sharedSourceUrl": null,
+            "backgroundBottomColor": "#D29034",
+            "backgroundTopColor": "#D29034",
+            "canBePublic": true,
+            "canBeEnterprise": true,
+            "canBeOrg": true,
+            "canBePrivate": true,
+            "canInvite": true
+        },
+        "shortLink": "91tr48Vb",
+        "subscribed": false,
+        "labelNames": {
+            "green": "",
+            "yellow": "",
+            "orange": "",
+            "red": "",
+            "purple": "",
+            "blue": "",
+            "sky": "",
+            "lime": "",
+            "pink": "",
+            "black": "",
+            "green_dark": "",
+            "yellow_dark": "",
+            "orange_dark": "",
+            "red_dark": "",
+            "purple_dark": "",
+            "blue_dark": "",
+            "sky_dark": "",
+            "lime_dark": "",
+            "pink_dark": "",
+            "black_dark": "",
+            "green_light": "",
+            "yellow_light": "",
+            "orange_light": "",
+            "red_light": "",
+            "purple_light": "",
+            "blue_light": "",
+            "sky_light": "",
+            "lime_light": "",
+            "pink_light": "",
+            "black_light": ""
+        },
+        "powerUps": [
+            
+        ],
+        "dateLastActivity": null,
+        "dateLastView": null,
+        "shortUrl": "https://trello.com/b/91tr48Vb",
+        "idTags": [
+            
+        ],
+        "datePluginDisable": null,
+        "creationMethod": "automatic",
+        "ixUpdate": "6",
+        "templateGallery": null,
+        "enterpriseOwned": false,
+        "idBoardSource": null,
+        "premiumFeatures": [
+            "additionalBoardBackgrounds",
+            "additionalStickers",
+            "customBoardBackgrounds",
+            "customEmoji",
+            "customStickers",
+            "plugins"
+        ],
+        "idMemberCreator": "56a0aaa2ccd7243116ce6be1",
+        "type": null,
+        "memberships": [
+            {
+                "id": "692553d365f6be98d0195dc7",
+                "idMember": "56a0aaa2ccd7243116ce6be1",
+                "memberType": "admin",
+                "unconfirmed": false,
+                "deactivated": false
+            }
+        ]
+    }
+]
+Request method:	GET
+Request URI:	https://api.trello.com/1/members/me/boards?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 3726
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:34 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Set-Cookie: dsc=c9e392ccc048bbb0d43f4ecba4704a88acd8eacf1f9f8de7841bdea18ca3679d; Path=/; Expires=Tue, 09 Dec 2025 06:59:34 GMT; Secure; SameSite=None
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 95
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 295
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 368
+X-Server-Time: 1764053974969
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: 451fa64c1b2b49e595dffd2183d9307f
+Atl-Request-Id: 451fa64c-1b2b-49e5-95df-fd2183d9307f
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 1cc1479dc07ff39f9918b11de014e0a8.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: MwBjI46ni0dqCnWJdRWvs5O9D3WoAtNXr1Vled9RK4UxGKbbuKqJdg==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=244,atl-edge;dur=192,atl-edge-internal;dur=7,atl-edge-upstream;dur=186,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="MwBjI46ni0dqCnWJdRWvs5O9D3WoAtNXr1Vled9RK4UxGKbbuKqJdg==",cdn-downstream-fbl;dur=247
+
+[
+    {
+        "id": "692553d365f6be98d0195dad",
+        "nodeId": "ari:cloud:trello::board/workspace/60c1544adf79317f3e39ccd2/692553d365f6be98d0195dad",
+        "name": "Updated_Board_Name",
+        "desc": "",
+        "descData": null,
+        "closed": false,
+        "dateClosed": null,
+        "idOrganization": "60c1544adf79317f3e39ccd2",
+        "idEnterprise": null,
+        "limits": {
+            "attachments": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 36000,
+                    "warnAt": 28800
+                },
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 1000,
+                    "warnAt": 800
+                }
+            },
+            "boards": {
+                "totalMembersPerBoard": {
+                    "status": "ok",
+                    "disableAt": 1600,
+                    "warnAt": 1280
+                },
+                "totalAccessRequestsPerBoard": {
+                    "status": "ok",
+                    "disableAt": 4000,
+                    "warnAt": 3200
+                }
+            },
+            "cards": {
+                "openPerBoard": {
+                    "status": "ok",
+                    "disableAt": 5000,
+                    "warnAt": 4000
+                },
+                "openPerList": {
+                    "status": "ok",
+                    "disableAt": 5000,
+                    "warnAt": 4000
+                },
+                "totalPerBoard": {
+                    "status": "ok",
+                    "disableAt": 2000000,
+                    "warnAt": 1600000
+                },
+                "totalPerList": {
+                    "status": "ok",
+                    "disableAt": 1000000,
+                    "warnAt": 800000
+                }
+            },
+            "checklists": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 1800000,
+                    "warnAt": 1440000
+                },
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 500,
+                    "warnAt": 400
+                }
+            },
+            "checkItems": {
+                "perChecklist": {
+                    "status": "ok",
+                    "disableAt": 200,
+                    "warnAt": 160
+                }
+            },
+            "customFields": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 50,
+                    "warnAt": 40
+                }
+            },
+            "customFieldOptions": {
+                "perField": {
+                    "status": "ok",
+                    "disableAt": 50,
+                    "warnAt": 40
+                }
+            },
+            "labels": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 1000,
+                    "warnAt": 800
+                }
+            },
+            "lists": {
+                "openPerBoard": {
+                    "status": "ok",
+                    "disableAt": 500,
+                    "warnAt": 400
+                },
+                "totalPerBoard": {
+                    "status": "ok",
+                    "disableAt": 3000,
+                    "warnAt": 2400
+                }
+            },
+            "stickers": {
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 70,
+                    "warnAt": 56
+                }
+            },
+            "reactions": {
+                "perAction": {
+                    "status": "ok",
+                    "disableAt": 900,
+                    "warnAt": 720
+                },
+                "uniquePerAction": {
+                    "status": "ok",
+                    "disableAt": 17,
+                    "warnAt": 14
+                }
+            }
+        },
+        "pinned": false,
+        "starred": false,
+        "url": "https://trello.com/b/91tr48Vb/updatedboardname",
+        "prefs": {
+            "permissionLevel": "private",
+            "hideVotes": false,
+            "voting": "disabled",
+            "comments": "members",
+            "invitations": "members",
+            "selfJoin": true,
+            "cardCovers": true,
+            "showCompleteStatus": true,
+            "cardCounts": false,
+            "isTemplate": false,
+            "cardAging": "regular",
+            "calendarFeedEnabled": false,
+            "hiddenPluginBoardButtons": [
+                
+            ],
+            "switcherViews": [
+                {
+                    "viewType": "Board",
+                    "enabled": true
+                },
+                {
+                    "viewType": "Table",
+                    "enabled": true
+                },
+                {
+                    "viewType": "Calendar",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Dashboard",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Timeline",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Map",
+                    "enabled": false
+                }
+            ],
+            "autoArchive": null,
+            "background": "orange",
+            "backgroundColor": "#D29034",
+            "backgroundDarkColor": null,
+            "backgroundImage": null,
+            "backgroundDarkImage": null,
+            "backgroundImageScaled": null,
+            "backgroundTile": false,
+            "backgroundBrightness": "dark",
+            "sharedSourceUrl": null,
+            "backgroundBottomColor": "#D29034",
+            "backgroundTopColor": "#D29034",
+            "canBePublic": true,
+            "canBeEnterprise": true,
+            "canBeOrg": true,
+            "canBePrivate": true,
+            "canInvite": true
+        },
+        "shortLink": "91tr48Vb",
+        "subscribed": false,
+        "labelNames": {
+            "green": "",
+            "yellow": "",
+            "orange": "",
+            "red": "",
+            "purple": "",
+            "blue": "",
+            "sky": "",
+            "lime": "",
+            "pink": "",
+            "black": "",
+            "green_dark": "",
+            "yellow_dark": "",
+            "orange_dark": "",
+            "red_dark": "",
+            "purple_dark": "",
+            "blue_dark": "",
+            "sky_dark": "",
+            "lime_dark": "",
+            "pink_dark": "",
+            "black_dark": "",
+            "green_light": "",
+            "yellow_light": "",
+            "orange_light": "",
+            "red_light": "",
+            "purple_light": "",
+            "blue_light": "",
+            "sky_light": "",
+            "lime_light": "",
+            "pink_light": "",
+            "black_light": ""
+        },
+        "powerUps": [
+            
+        ],
+        "dateLastActivity": null,
+        "dateLastView": null,
+        "shortUrl": "https://trello.com/b/91tr48Vb",
+        "idTags": [
+            
+        ],
+        "datePluginDisable": null,
+        "creationMethod": "automatic",
+        "ixUpdate": "6",
+        "templateGallery": null,
+        "enterpriseOwned": false,
+        "idBoardSource": null,
+        "premiumFeatures": [
+            "additionalBoardBackgrounds",
+            "additionalStickers",
+            "customBoardBackgrounds",
+            "customEmoji",
+            "customStickers",
+            "plugins"
+        ],
+        "idMemberCreator": "56a0aaa2ccd7243116ce6be1",
+        "type": null,
+        "memberships": [
+            {
+                "id": "692553d365f6be98d0195dc7",
+                "idMember": "56a0aaa2ccd7243116ce6be1",
+                "memberType": "admin",
+                "unconfirmed": false,
+                "deactivated": false
+            }
+        ]
+    }
+]
+Request method:	GET
+Request URI:	https://api.trello.com/1/members/me/boards?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 3726
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:35 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Set-Cookie: dsc=90d9c1e519361b85c27fc8bb1df6aaf83816480e83ec5ef43142d368ed7ea686; Path=/; Expires=Tue, 09 Dec 2025 06:59:35 GMT; Secure; SameSite=None
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 94
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 294
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 363
+X-Server-Time: 1764053975400
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: d251263ba47d4852bc9164d10d4f2f9c
+Atl-Request-Id: d251263b-a47d-4852-bc91-64d10d4f2f9c
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 4010d2db792e9b5757a1028ba448aac2.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: K-p8QTnS3aoikVshY8p4clTF85hGL_1zL98XW6xQiLY-aNNDbdzLXA==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=237,atl-edge;dur=182,atl-edge-internal;dur=8,atl-edge-upstream;dur=176,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="K-p8QTnS3aoikVshY8p4clTF85hGL_1zL98XW6xQiLY-aNNDbdzLXA==",cdn-downstream-fbl;dur=241
+
+[
+    {
+        "id": "692553d365f6be98d0195dad",
+        "nodeId": "ari:cloud:trello::board/workspace/60c1544adf79317f3e39ccd2/692553d365f6be98d0195dad",
+        "name": "Updated_Board_Name",
+        "desc": "",
+        "descData": null,
+        "closed": false,
+        "dateClosed": null,
+        "idOrganization": "60c1544adf79317f3e39ccd2",
+        "idEnterprise": null,
+        "limits": {
+            "attachments": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 36000,
+                    "warnAt": 28800
+                },
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 1000,
+                    "warnAt": 800
+                }
+            },
+            "boards": {
+                "totalMembersPerBoard": {
+                    "status": "ok",
+                    "disableAt": 1600,
+                    "warnAt": 1280
+                },
+                "totalAccessRequestsPerBoard": {
+                    "status": "ok",
+                    "disableAt": 4000,
+                    "warnAt": 3200
+                }
+            },
+            "cards": {
+                "openPerBoard": {
+                    "status": "ok",
+                    "disableAt": 5000,
+                    "warnAt": 4000
+                },
+                "openPerList": {
+                    "status": "ok",
+                    "disableAt": 5000,
+                    "warnAt": 4000
+                },
+                "totalPerBoard": {
+                    "status": "ok",
+                    "disableAt": 2000000,
+                    "warnAt": 1600000
+                },
+                "totalPerList": {
+                    "status": "ok",
+                    "disableAt": 1000000,
+                    "warnAt": 800000
+                }
+            },
+            "checklists": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 1800000,
+                    "warnAt": 1440000
+                },
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 500,
+                    "warnAt": 400
+                }
+            },
+            "checkItems": {
+                "perChecklist": {
+                    "status": "ok",
+                    "disableAt": 200,
+                    "warnAt": 160
+                }
+            },
+            "customFields": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 50,
+                    "warnAt": 40
+                }
+            },
+            "customFieldOptions": {
+                "perField": {
+                    "status": "ok",
+                    "disableAt": 50,
+                    "warnAt": 40
+                }
+            },
+            "labels": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 1000,
+                    "warnAt": 800
+                }
+            },
+            "lists": {
+                "openPerBoard": {
+                    "status": "ok",
+                    "disableAt": 500,
+                    "warnAt": 400
+                },
+                "totalPerBoard": {
+                    "status": "ok",
+                    "disableAt": 3000,
+                    "warnAt": 2400
+                }
+            },
+            "stickers": {
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 70,
+                    "warnAt": 56
+                }
+            },
+            "reactions": {
+                "perAction": {
+                    "status": "ok",
+                    "disableAt": 900,
+                    "warnAt": 720
+                },
+                "uniquePerAction": {
+                    "status": "ok",
+                    "disableAt": 17,
+                    "warnAt": 14
+                }
+            }
+        },
+        "pinned": false,
+        "starred": false,
+        "url": "https://trello.com/b/91tr48Vb/updatedboardname",
+        "prefs": {
+            "permissionLevel": "private",
+            "hideVotes": false,
+            "voting": "disabled",
+            "comments": "members",
+            "invitations": "members",
+            "selfJoin": true,
+            "cardCovers": true,
+            "showCompleteStatus": true,
+            "cardCounts": false,
+            "isTemplate": false,
+            "cardAging": "regular",
+            "calendarFeedEnabled": false,
+            "hiddenPluginBoardButtons": [
+                
+            ],
+            "switcherViews": [
+                {
+                    "viewType": "Board",
+                    "enabled": true
+                },
+                {
+                    "viewType": "Table",
+                    "enabled": true
+                },
+                {
+                    "viewType": "Calendar",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Dashboard",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Timeline",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Map",
+                    "enabled": false
+                }
+            ],
+            "autoArchive": null,
+            "background": "orange",
+            "backgroundColor": "#D29034",
+            "backgroundDarkColor": null,
+            "backgroundImage": null,
+            "backgroundDarkImage": null,
+            "backgroundImageScaled": null,
+            "backgroundTile": false,
+            "backgroundBrightness": "dark",
+            "sharedSourceUrl": null,
+            "backgroundBottomColor": "#D29034",
+            "backgroundTopColor": "#D29034",
+            "canBePublic": true,
+            "canBeEnterprise": true,
+            "canBeOrg": true,
+            "canBePrivate": true,
+            "canInvite": true
+        },
+        "shortLink": "91tr48Vb",
+        "subscribed": false,
+        "labelNames": {
+            "green": "",
+            "yellow": "",
+            "orange": "",
+            "red": "",
+            "purple": "",
+            "blue": "",
+            "sky": "",
+            "lime": "",
+            "pink": "",
+            "black": "",
+            "green_dark": "",
+            "yellow_dark": "",
+            "orange_dark": "",
+            "red_dark": "",
+            "purple_dark": "",
+            "blue_dark": "",
+            "sky_dark": "",
+            "lime_dark": "",
+            "pink_dark": "",
+            "black_dark": "",
+            "green_light": "",
+            "yellow_light": "",
+            "orange_light": "",
+            "red_light": "",
+            "purple_light": "",
+            "blue_light": "",
+            "sky_light": "",
+            "lime_light": "",
+            "pink_light": "",
+            "black_light": ""
+        },
+        "powerUps": [
+            
+        ],
+        "dateLastActivity": null,
+        "dateLastView": null,
+        "shortUrl": "https://trello.com/b/91tr48Vb",
+        "idTags": [
+            
+        ],
+        "datePluginDisable": null,
+        "creationMethod": "automatic",
+        "ixUpdate": "6",
+        "templateGallery": null,
+        "enterpriseOwned": false,
+        "idBoardSource": null,
+        "premiumFeatures": [
+            "additionalBoardBackgrounds",
+            "additionalStickers",
+            "customBoardBackgrounds",
+            "customEmoji",
+            "customStickers",
+            "plugins"
+        ],
+        "idMemberCreator": "56a0aaa2ccd7243116ce6be1",
+        "type": null,
+        "memberships": [
+            {
+                "id": "692553d365f6be98d0195dc7",
+                "idMember": "56a0aaa2ccd7243116ce6be1",
+                "memberType": "admin",
+                "unconfirmed": false,
+                "deactivated": false
+            }
+        ]
+    }
+]
+Request method:	DELETE
+Request URI:	https://api.trello.com/1/boards/692553d365f6be98d0195dad?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Form params:	<none>
+Path params:	id=692553d365f6be98d0195dad
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 16
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:36 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 93
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 293
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 358
+X-Server-Time: 1764053976161
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: 55b5fe25a29e444eb4c3b1a7024d76ad
+Atl-Request-Id: 55b5fe25-a29e-444e-b4c3-b1a7024d76ad
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 60f9242a1b2c0f0529b66fb3731ac04c.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: 65RfhMYjCw9iz3qzF-acxTRD2KT7tcKmMz3kJS6JXJJK3hvT2Zu5Zw==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=603,atl-edge;dur=553,atl-edge-internal;dur=7,atl-edge-upstream;dur=547,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="65RfhMYjCw9iz3qzF-acxTRD2KT7tcKmMz3kJS6JXJJK3hvT2Zu5Zw==",cdn-downstream-fbl;dur=606
+
+{
+    "_value": null
+}
+Request method:	POST
+Request URI:	https://api.trello.com/1/boards?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6&name=Board_For_List_Tests_Test
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+				name=Board_For_List_Tests_Test
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 1700
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:36 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 92
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 292
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 357
+X-Server-Time: 1764053976751
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: a387a91445ba4cc780c2a5771af3dc39
+Atl-Request-Id: a387a914-45ba-4cc7-80c2-a5771af3dc39
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 015fad01786b8bff3cc06f5afebe39a6.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: dbC1huwnyStjVry8MtC49eeRGhk7XABlbTf4-VZdUsHS2GWUOshYJg==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=514,atl-edge;dur=463,atl-edge-internal;dur=7,atl-edge-upstream;dur=457,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="dbC1huwnyStjVry8MtC49eeRGhk7XABlbTf4-VZdUsHS2GWUOshYJg==",cdn-downstream-fbl;dur=517
+
+{
+    "id": "692553d82169a5cc4edabaf6",
+    "name": "Board_For_List_Tests_Test",
+    "desc": "",
+    "descData": null,
+    "closed": false,
+    "idOrganization": "60c1544adf79317f3e39ccd2",
+    "idEnterprise": null,
+    "pinned": false,
+    "url": "https://trello.com/b/D19gOPtc/boardforlistteststest",
+    "shortUrl": "https://trello.com/b/D19gOPtc",
+    "prefs": {
+        "permissionLevel": "private",
+        "hideVotes": false,
+        "voting": "disabled",
+        "comments": "members",
+        "invitations": "members",
+        "selfJoin": true,
+        "cardCovers": true,
+        "showCompleteStatus": true,
+        "cardCounts": false,
+        "isTemplate": false,
+        "cardAging": "regular",
+        "calendarFeedEnabled": false,
+        "hiddenPluginBoardButtons": [
+            
+        ],
+        "switcherViews": [
+            {
+                "viewType": "Board",
+                "enabled": true
+            },
+            {
+                "viewType": "Table",
+                "enabled": true
+            },
+            {
+                "viewType": "Calendar",
+                "enabled": false
+            },
+            {
+                "viewType": "Dashboard",
+                "enabled": false
+            },
+            {
+                "viewType": "Timeline",
+                "enabled": false
+            },
+            {
+                "viewType": "Map",
+                "enabled": false
+            }
+        ],
+        "autoArchive": null,
+        "background": "blue",
+        "backgroundColor": "#0079BF",
+        "backgroundDarkColor": null,
+        "backgroundImage": null,
+        "backgroundDarkImage": null,
+        "backgroundImageScaled": null,
+        "backgroundTile": false,
+        "backgroundBrightness": "dark",
+        "sharedSourceUrl": null,
+        "backgroundBottomColor": "#0079BF",
+        "backgroundTopColor": "#0079BF",
+        "canBePublic": true,
+        "canBeEnterprise": true,
+        "canBeOrg": true,
+        "canBePrivate": true,
+        "canInvite": true
+    },
+    "labelNames": {
+        "green": "",
+        "yellow": "",
+        "orange": "",
+        "red": "",
+        "purple": "",
+        "blue": "",
+        "sky": "",
+        "lime": "",
+        "pink": "",
+        "black": "",
+        "green_dark": "",
+        "yellow_dark": "",
+        "orange_dark": "",
+        "red_dark": "",
+        "purple_dark": "",
+        "blue_dark": "",
+        "sky_dark": "",
+        "lime_dark": "",
+        "pink_dark": "",
+        "black_dark": "",
+        "green_light": "",
+        "yellow_light": "",
+        "orange_light": "",
+        "red_light": "",
+        "purple_light": "",
+        "blue_light": "",
+        "sky_light": "",
+        "lime_light": "",
+        "pink_light": "",
+        "black_light": ""
+    },
+    "limits": {
+        
+    }
+}
+Request method:	GET
+Request URI:	https://api.trello.com/1/members/me/boards?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 3736
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:37 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Set-Cookie: dsc=4ae465ce2a17a410c3e41b0be2ece8c19ec7e00ca60d160406cda916052fc867; Path=/; Expires=Tue, 09 Dec 2025 06:59:37 GMT; Secure; SameSite=None
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 91
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 291
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 356
+X-Server-Time: 1764053977105
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: a15f773bdf6e41e1a0c17754327ec978
+Atl-Request-Id: a15f773b-df6e-41e1-a0c1-7754327ec978
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 940a9ab7e622eaa3f4ada41ac7c235d8.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: UdEyfF0gV-aS9iTHnxPVwwD9-PWBpmWrPq7H6-6W4r9GkiqyTvUdIw==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=258,atl-edge;dur=206,atl-edge-internal;dur=7,atl-edge-upstream;dur=200,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="UdEyfF0gV-aS9iTHnxPVwwD9-PWBpmWrPq7H6-6W4r9GkiqyTvUdIw==",cdn-downstream-fbl;dur=261
+
+[
+    {
+        "id": "692553d82169a5cc4edabaf6",
+        "nodeId": "ari:cloud:trello::board/workspace/60c1544adf79317f3e39ccd2/692553d82169a5cc4edabaf6",
+        "name": "Board_For_List_Tests_Test",
+        "desc": "",
+        "descData": null,
+        "closed": false,
+        "dateClosed": null,
+        "idOrganization": "60c1544adf79317f3e39ccd2",
+        "idEnterprise": null,
+        "limits": {
+            "attachments": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 36000,
+                    "warnAt": 28800
+                },
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 1000,
+                    "warnAt": 800
+                }
+            },
+            "boards": {
+                "totalMembersPerBoard": {
+                    "status": "ok",
+                    "disableAt": 1600,
+                    "warnAt": 1280
+                },
+                "totalAccessRequestsPerBoard": {
+                    "status": "ok",
+                    "disableAt": 4000,
+                    "warnAt": 3200
+                }
+            },
+            "cards": {
+                "openPerBoard": {
+                    "status": "ok",
+                    "disableAt": 5000,
+                    "warnAt": 4000
+                },
+                "openPerList": {
+                    "status": "ok",
+                    "disableAt": 5000,
+                    "warnAt": 4000
+                },
+                "totalPerBoard": {
+                    "status": "ok",
+                    "disableAt": 2000000,
+                    "warnAt": 1600000
+                },
+                "totalPerList": {
+                    "status": "ok",
+                    "disableAt": 1000000,
+                    "warnAt": 800000
+                }
+            },
+            "checklists": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 1800000,
+                    "warnAt": 1440000
+                },
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 500,
+                    "warnAt": 400
+                }
+            },
+            "checkItems": {
+                "perChecklist": {
+                    "status": "ok",
+                    "disableAt": 200,
+                    "warnAt": 160
+                }
+            },
+            "customFields": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 50,
+                    "warnAt": 40
+                }
+            },
+            "customFieldOptions": {
+                "perField": {
+                    "status": "ok",
+                    "disableAt": 50,
+                    "warnAt": 40
+                }
+            },
+            "labels": {
+                "perBoard": {
+                    "status": "ok",
+                    "disableAt": 1000,
+                    "warnAt": 800
+                }
+            },
+            "lists": {
+                "openPerBoard": {
+                    "status": "ok",
+                    "disableAt": 500,
+                    "warnAt": 400
+                },
+                "totalPerBoard": {
+                    "status": "ok",
+                    "disableAt": 3000,
+                    "warnAt": 2400
+                }
+            },
+            "stickers": {
+                "perCard": {
+                    "status": "ok",
+                    "disableAt": 70,
+                    "warnAt": 56
+                }
+            },
+            "reactions": {
+                "perAction": {
+                    "status": "ok",
+                    "disableAt": 900,
+                    "warnAt": 720
+                },
+                "uniquePerAction": {
+                    "status": "ok",
+                    "disableAt": 17,
+                    "warnAt": 14
+                }
+            }
+        },
+        "pinned": false,
+        "starred": false,
+        "url": "https://trello.com/b/D19gOPtc/boardforlistteststest",
+        "prefs": {
+            "permissionLevel": "private",
+            "hideVotes": false,
+            "voting": "disabled",
+            "comments": "members",
+            "invitations": "members",
+            "selfJoin": true,
+            "cardCovers": true,
+            "showCompleteStatus": true,
+            "cardCounts": false,
+            "isTemplate": false,
+            "cardAging": "regular",
+            "calendarFeedEnabled": false,
+            "hiddenPluginBoardButtons": [
+                
+            ],
+            "switcherViews": [
+                {
+                    "viewType": "Board",
+                    "enabled": true
+                },
+                {
+                    "viewType": "Table",
+                    "enabled": true
+                },
+                {
+                    "viewType": "Calendar",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Dashboard",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Timeline",
+                    "enabled": false
+                },
+                {
+                    "viewType": "Map",
+                    "enabled": false
+                }
+            ],
+            "autoArchive": null,
+            "background": "blue",
+            "backgroundColor": "#0079BF",
+            "backgroundDarkColor": null,
+            "backgroundImage": null,
+            "backgroundDarkImage": null,
+            "backgroundImageScaled": null,
+            "backgroundTile": false,
+            "backgroundBrightness": "dark",
+            "sharedSourceUrl": null,
+            "backgroundBottomColor": "#0079BF",
+            "backgroundTopColor": "#0079BF",
+            "canBePublic": true,
+            "canBeEnterprise": true,
+            "canBeOrg": true,
+            "canBePrivate": true,
+            "canInvite": true
+        },
+        "shortLink": "D19gOPtc",
+        "subscribed": false,
+        "labelNames": {
+            "green": "",
+            "yellow": "",
+            "orange": "",
+            "red": "",
+            "purple": "",
+            "blue": "",
+            "sky": "",
+            "lime": "",
+            "pink": "",
+            "black": "",
+            "green_dark": "",
+            "yellow_dark": "",
+            "orange_dark": "",
+            "red_dark": "",
+            "purple_dark": "",
+            "blue_dark": "",
+            "sky_dark": "",
+            "lime_dark": "",
+            "pink_dark": "",
+            "black_dark": "",
+            "green_light": "",
+            "yellow_light": "",
+            "orange_light": "",
+            "red_light": "",
+            "purple_light": "",
+            "blue_light": "",
+            "sky_light": "",
+            "lime_light": "",
+            "pink_light": "",
+            "black_light": ""
+        },
+        "powerUps": [
+            
+        ],
+        "dateLastActivity": null,
+        "dateLastView": null,
+        "shortUrl": "https://trello.com/b/D19gOPtc",
+        "idTags": [
+            
+        ],
+        "datePluginDisable": null,
+        "creationMethod": "automatic",
+        "ixUpdate": "3",
+        "templateGallery": null,
+        "enterpriseOwned": false,
+        "idBoardSource": null,
+        "premiumFeatures": [
+            "additionalBoardBackgrounds",
+            "additionalStickers",
+            "customBoardBackgrounds",
+            "customEmoji",
+            "customStickers",
+            "plugins"
+        ],
+        "idMemberCreator": "56a0aaa2ccd7243116ce6be1",
+        "type": null,
+        "memberships": [
+            {
+                "id": "692553d82169a5cc4edabb10",
+                "idMember": "56a0aaa2ccd7243116ce6be1",
+                "memberType": "admin",
+                "unconfirmed": false,
+                "deactivated": false
+            }
+        ]
+    }
+]
+Request method:	POST
+Request URI:	https://api.trello.com/1/lists?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6&name=E2E_Test_List_1&idBoard=692553d82169a5cc4edabaf6
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+				name=E2E_Test_List_1
+				idBoard=692553d82169a5cc4edabaf6
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 199
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:37 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 90
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 290
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 355
+X-Server-Time: 1764053977498
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: 9623e04918344f1a9937953643a8a424
+Atl-Request-Id: 9623e049-1834-4f1a-9937-953643a8a424
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 58abc76b84af71759da7f4300a84e67a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: g7aE4OFGMx6KTh8UHwYeU2AT7xhFbhmQG6RyT0rSMbhgUuw1bfW0LQ==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=272,atl-edge;dur=221,atl-edge-internal;dur=8,atl-edge-upstream;dur=214,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="g7aE4OFGMx6KTh8UHwYeU2AT7xhFbhmQG6RyT0rSMbhgUuw1bfW0LQ==",cdn-downstream-fbl;dur=276
+
+{
+    "id": "692553d979d5c4c8e6ab3383",
+    "name": "E2E_Test_List_1",
+    "closed": false,
+    "color": null,
+    "idBoard": "692553d82169a5cc4edabaf6",
+    "pos": 140737488338944,
+    "type": null,
+    "datasource": {
+        "filter": false
+    },
+    "limits": {
+        
+    }
+}
+Request method:	GET
+Request URI:	https://api.trello.com/1/lists/692553d979d5c4c8e6ab3383?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Form params:	<none>
+Path params:	id=692553d979d5c4c8e6ab3383
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 187
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:37 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Set-Cookie: dsc=458873b66c555613bb0c16f14fe77416189eb902f56f1321409680aaf4379472; Path=/; Expires=Tue, 09 Dec 2025 06:59:37 GMT; Secure; SameSite=None
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 89
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 289
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 354
+X-Server-Time: 1764053977812
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: 8cfdd36a44c546c1b8c06732901302af
+Atl-Request-Id: 8cfdd36a-44c5-46c1-b8c0-6732901302af
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 aa2eccbbc62cb0f908032a2239959c16.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: u8zhpNbPTTh5DnQAjtTixqxBUlCVr0Pq99w3kXYfh_CGPHuSB0KeVQ==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=209,atl-edge;dur=159,atl-edge-internal;dur=8,atl-edge-upstream;dur=153,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="u8zhpNbPTTh5DnQAjtTixqxBUlCVr0Pq99w3kXYfh_CGPHuSB0KeVQ==",cdn-downstream-fbl;dur=212
+
+{
+    "id": "692553d979d5c4c8e6ab3383",
+    "name": "E2E_Test_List_1",
+    "closed": false,
+    "color": null,
+    "idBoard": "692553d82169a5cc4edabaf6",
+    "pos": 140737488338944,
+    "type": null,
+    "datasource": {
+        "filter": false
+    }
+}
+Request method:	PUT
+Request URI:	https://api.trello.com/1/lists/692553d979d5c4c8e6ab3383?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6&name=Updated_List_Name
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+				name=Updated_List_Name
+Form params:	<none>
+Path params:	id=692553d979d5c4c8e6ab3383
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 147
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:38 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 88
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 288
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 353
+X-Server-Time: 1764053978166
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: 7c591e9d56394ef2890ac9e55e57c095
+Atl-Request-Id: 7c591e9d-5639-4ef2-890a-c9e55e57c095
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 8224d601efe46aa8bfcfa3dca843a788.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: kv8XBHwf1YECN5gDMoOT51QFh52gGAEmHjBaw94rAQ4tIgmtk8hHKg==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=267,atl-edge;dur=215,atl-edge-internal;dur=9,atl-edge-upstream;dur=208,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="kv8XBHwf1YECN5gDMoOT51QFh52gGAEmHjBaw94rAQ4tIgmtk8hHKg==",cdn-downstream-fbl;dur=270
+
+{
+    "id": "692553d979d5c4c8e6ab3383",
+    "name": "Updated_List_Name",
+    "closed": false,
+    "color": null,
+    "idBoard": "692553d82169a5cc4edabaf6",
+    "pos": 140737488338944
+}
+Request method:	PUT
+Request URI:	https://api.trello.com/1/lists/692553d979d5c4c8e6ab3383?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6&closed=true
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+				closed=true
+Form params:	<none>
+Path params:	id=692553d979d5c4c8e6ab3383
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 146
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:38 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 87
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 287
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 352
+X-Server-Time: 1764053978538
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: 6b0b6bb478d04a45a4fe3963826a6023
+Atl-Request-Id: 6b0b6bb4-78d0-4a45-a4fe-3963826a6023
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 5a2aa19967c62f6ce451d964db060b1e.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: BgWp2vodz8eWWbGXFkIwT3QR-KN172yOQhYS3JHby3ZmpvzwK_LtIg==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=280,atl-edge;dur=229,atl-edge-internal;dur=9,atl-edge-upstream;dur=221,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="BgWp2vodz8eWWbGXFkIwT3QR-KN172yOQhYS3JHby3ZmpvzwK_LtIg==",cdn-downstream-fbl;dur=284
+
+{
+    "id": "692553d979d5c4c8e6ab3383",
+    "name": "Updated_List_Name",
+    "closed": true,
+    "color": null,
+    "idBoard": "692553d82169a5cc4edabaf6",
+    "pos": 140737488338944
+}
+Request method:	DELETE
+Request URI:	https://api.trello.com/1/boards/692553d82169a5cc4edabaf6?key=89563ff9e481407651ba2b84c7458685&token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=89563ff9e481407651ba2b84c7458685
+				token=ATTAd53bc978ac38f1d8488e95b1a0d467dfc698951591bce8b54c11a85920293d03E44253B6
+Form params:	<none>
+Path params:	id=692553d82169a5cc4edabaf6
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 16
+Connection: keep-alive
+Date: Tue, 25 Nov 2025 06:59:39 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Surrogate-Control: no-store
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Expires: Thu, 01 Jan 1970 00:00:00
+X-Trello-Version: 1.404731.0
+X-Trello-Environment: Production
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining, retry-after
+X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+X-Rate-Limit-Db-Query-Time-Max: 7200000
+X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+X-Rate-Limit-Api-Token-Interval-Ms: 10000
+X-Rate-Limit-Api-Token-Max: 100
+X-Rate-Limit-Api-Token-Remaining: 86
+X-Rate-Limit-Api-Key-Interval-Ms: 10000
+X-Rate-Limit-Api-Key-Max: 300
+X-Rate-Limit-Api-Key-Remaining: 286
+X-Rate-Limit-Member-Interval-Ms: 10000
+X-Rate-Limit-Member-Max: 375
+X-Rate-Limit-Member-Remaining: 351
+X-Server-Time: 1764053979277
+Server: AtlassianEdge
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: f910f9b84aa64d3886c41427f9ce0cef
+Atl-Request-Id: f910f9b8-4aa6-4d38-86c4-1427f9ce0cef
+Strict-Transport-Security: max-age=63072000; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 f6ea3e4fb85b328db4c583aea8f8284a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CAI50-P3
+X-Amz-Cf-Id: Ew9J2wR_is2_3ZCgoiQ64NOwDJ7GkDWorKouLwo3_hUZ2okq9YBLPA==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=667,atl-edge;dur=616,atl-edge-internal;dur=9,atl-edge-upstream;dur=608,atl-edge-pop;desc="aws-eu-central-1",cdn-cache-miss,cdn-pop;desc="CAI50-P3",cdn-rid;desc="Ew9J2wR_is2_3ZCgoiQ64NOwDJ7GkDWorKouLwo3_hUZ2okq9YBLPA==",cdn-downstream-fbl;dur=669
+
+{
+    "_value": null
+}
