@@ -15,7 +15,20 @@ public enum APIResources {
     CreateLabelAPI("/labels"),
     GetLabelAPI("/labels/{id}"),
     UpdateLabelAPI("/labels/{id}"),
-    DeleteLabelAPI("/labels/{id}");
+    DeleteLabelAPI("/labels/{id}"),
+    // Card
+    CreateCardAPI("/cards"),
+    GetCardAPI("/cards/{id}"),
+    UpdateCardAPI("/cards/{id}"),
+    DeleteCardAPI("/cards/{id}"),
+    // Checklist
+    CreateChecklistAPI("/checklists"),
+    GetChecklistAPI("/checklists/{id}"),
+    UpdateChecklistAPI("/checklists/{id}"),
+    DeleteChecklistAPI("/checklists/{id}"),
+    CreateCheckItemAPI("/checklists/{id}/checkItems"),
+    UpdateCheckItemAPI("/cards/{cardId}/checkItem/{checkItemId}"),
+    DeleteCheckItemAPI("/checklists/{checklistId}/checkItems/{checkItemId}");
 
     private String resource;
 
@@ -27,4 +40,3 @@ public enum APIResources {
         return resource;
     }
 }
-
