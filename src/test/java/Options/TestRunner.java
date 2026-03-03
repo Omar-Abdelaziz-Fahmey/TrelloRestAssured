@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
         features = "src/test/java/features",
         glue = {"stepDefinitions"},
         plugin = {"pretty", "json:target/jsonReports/e2e-report.json"},
-        tags = "@E2E"
+        tags = "@Regression"
 )
-public class E2ETestRunner {
+public class TestRunner {
 
 }

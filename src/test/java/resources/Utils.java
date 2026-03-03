@@ -12,14 +12,15 @@ import java.io.*;
 import java.util.Properties;
 
 public class Utils {
-    public static RequestSpecification req;
+    public static RequestSpecification requestSpec;
+
 
     public RequestSpecification requestSpecification() throws IOException {
 
-        if(req == null) {
+        if(requestSpec == null) {
             PrintStream log = new PrintStream(new FileOutputStream("logging.txt"));
 
-            req = new RequestSpecBuilder()
+            requestSpec = new RequestSpecBuilder()
                     .setBaseUri(getGlobalValue("baseUrl"))
                     .addQueryParam("key", getKey())
                     .addQueryParam("token", getToken())
@@ -28,7 +29,7 @@ public class Utils {
                     .addFilter(ResponseLoggingFilter.logResponseTo(log))
                     .build();
         }
-        return req;
+        return requestSpec;
     }
 
 
