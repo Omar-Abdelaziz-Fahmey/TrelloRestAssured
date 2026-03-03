@@ -1,36 +1,11 @@
 package resources;
-
 public enum APIResources {
-    // Board
-    CreateBoardAPI("/boards"),
-    GetBoardAPI("/members/me/boards"),
-    DeleteBoardAPI("/boards/{id}"),
-    UPDATEBoardAPI("/boards/{id}"),
-    // List
-    CreateListAPI("/lists"),
-    GetListAPI("/lists/{id}"),
-    UpdateListAPI("/lists/{id}"),
-    ArchiveListAPI("/lists/{id}"),
-    // Label
-    CreateLabelAPI("/labels"),
-    GetLabelAPI("/labels/{id}"),
-    UpdateLabelAPI("/labels/{id}"),
-    DeleteLabelAPI("/labels/{id}"),
-    // Card
-    CreateCardAPI("/cards"),
-    GetCardAPI("/cards/{id}"),
-    UpdateCardAPI("/cards/{id}"),
-    DeleteCardAPI("/cards/{id}"),
-    // Checklist
-    CreateChecklistAPI("/checklists"),
-    GetChecklistAPI("/checklists/{id}"),
-    UpdateChecklistAPI("/checklists/{id}"),
-    DeleteChecklistAPI("/checklists/{id}"),
-    CreateCheckItemAPI("/checklists/{id}/checkItems"),
-    UpdateCheckItemAPI("/cards/{cardId}/checkItem/{checkItemId}"),
-    DeleteCheckItemAPI("/checklists/{checklistId}/checkItems/{checkItemId}");
+    BOARD("/boards"),
+    LIST("/lists"),
+    CARD("/cards"),
+    CHECKLIST("/checklists");
 
-    private String resource;
+    private final String resource;
 
     APIResources(String resource) {
         this.resource = resource;
@@ -38,5 +13,21 @@ public enum APIResources {
 
     public String getResource() {
         return resource;
+    }
+
+    public String getResourceWithId() {
+        return resource + "/{id}";
+    }
+    public String getResourceArchive() {
+        return resource + "/{id}/closed";
+    }
+
+    public static APIResources fromString(String text) {
+        for (APIResources b : APIResources.values()) {
+            if (b.name().equalsIgnoreCase(text)) {
+                return b;
+            }
+        }
+        throw new IllegalArgumentException("No constant with text " + text + " found");
     }
 }
